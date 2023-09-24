@@ -3,22 +3,23 @@
 
 ## EDA
 
-1.銷售時間序列圖
-<p float="left">
+1. 銷售時間序列圖
   <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/4b7e8b00-865d-4077-9b0c-38c75c133a49" width="400" />
-  <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/a06e0595-94cb-410a-bdae-40422b6153b8" width="150" />
+<p float="left">
+  <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/db671c60-efda-4cfa-ab6d-deac6ac18528" width="100" />
+  <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/a06e0595-94cb-410a-bdae-40422b6153b8" width="250" />
 </p>
-2.銷售季節趨勢圖——月份、日期
+2. 銷售季節趨勢圖——月份、日期
 
-3.產品銷售額前十項
+3. 產品銷售額前十項
 
-4.ACF、PACF
+4. ACF、PACF
 
 ## Model
 
-1.LSTM
+1. LSTM
 
-2.CustomRegressor
+2. CustomRegressor
 
 ## Result
 
