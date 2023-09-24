@@ -37,7 +37,7 @@
   <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/fd93ced8-d3be-476d-ad0d-0116a62f2163" width="250">
 </p>
 
-5. 銷售額與石油價格的相關性：
+5. 銷售額與石油價格的相關性為-0.69，呈高相關性。因此在後續建模時亦需要考慮石油價格。
 <p align="center">
   <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/cf6c1e6e-de00-4ba9-8c00-a821b3c4d200" width="500">
 </p>
