@@ -9,7 +9,6 @@
 </p>
 <p align="center">
   <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/a06e0595-94cb-410a-bdae-40422b6153b8" width="300" />
-  <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/db671c60-efda-4cfa-ab6d-deac6ac18528" width="100" />
 </p>
 
 2. 銷售季節趨勢圖——月份、日期
