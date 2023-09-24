@@ -4,8 +4,10 @@
 ## EDA
 
 1. 銷售時間序列圖
-  <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/4b7e8b00-865d-4077-9b0c-38c75c133a49" width="400" />
-<p float="left">
+<p float="center">
+  <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/4b7e8b00-865d-4077-9b0c-38c75c133a49" width="500" />
+</p>
+<p float="center">
   <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/db671c60-efda-4cfa-ab6d-deac6ac18528" width="100" />
   <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/a06e0595-94cb-410a-bdae-40422b6153b8" width="250" />
 </p>
