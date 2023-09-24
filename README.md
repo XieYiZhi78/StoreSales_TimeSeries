@@ -13,14 +13,24 @@
 </p>
 
 2. 銷售季節趨勢圖——月份、日期
+<p align="center">
 <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/89bb3c9a-60cb-4da4-be20-84e1ba6e0bd2" width="500">
+</p>
+<p align="center">
 <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/ff005b75-4a4b-4148-bad1-4663eed61d5a" width="300">
+</p>
 
+<p align="center">
 <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/ff1d7fcf-d1c5-4bb7-8e34-17743971d33a" width="500">
+</p>
+<p align="center">
 <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/85bec208-8210-4b8e-9b38-6675b4677bba" width="300">
+</p>
 
 3. 產品銷售額前十項
+<p align="center">
 <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/220f1142-e768-40bc-b775-3b968a1628f2" width="300">
+</p>
 
 4. ACF、PACF
 <p align="center">
