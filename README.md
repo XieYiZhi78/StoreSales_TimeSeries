@@ -44,7 +44,7 @@
 
 ## Model
 
-1. LSTM
+1. LSTM  
 最初，我們選擇使用LSTM作為預測模型，因為LSTM在處理時間序列數據方面通常都會表現得相當出色。然而，我們後來發現LSTM的output shape只能是1，或者必須與input shape相同才能成功建構模型。這導致無法將其他特徵納入考慮，從而導致預測結果不如預期。因此，我們決定改用Ridge Regression作為新的預測模型。
 
 2. Ridge Regression
