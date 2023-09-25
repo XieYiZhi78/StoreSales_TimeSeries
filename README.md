@@ -37,7 +37,7 @@
   <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/fd93ced8-d3be-476d-ad0d-0116a62f2163" width="250">
 </p>
 
-5. 銷售額與石油價格的相關性為-0.69，呈高相關性。因此在後續建模時亦需要考慮石油價格。
+5. 銷售額與石油價格的相關性為-0.69，呈高相關性。因此在後續建模時亦需要考慮石油價格，並使用內插法填補假日的石油價格缺失值。
 <p align="center">
   <img src="https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/cf6c1e6e-de00-4ba9-8c00-a821b3c4d200" width="500">
 </p>
@@ -45,15 +45,19 @@
 ## Model
 
 1. LSTM
+最初，我們選擇使用LSTM作為預測模型，因為LSTM在處理時間序列數據方面通常都會表現得相當出色。然而，我們後來發現LSTM的output shape只能是1，或者必須與input shape相同才能成功建構模型。這導致無法將其他特徵納入考慮，從而導致預測結果不如預期。因此，我們決定改用Ridge Regression作為新的預測模型。
 
-2. CustomRegressor
+2. Ridge Regression
+
+3. Custom Regression
 
 ## Result
 
 |Model|Score|Rank|Time|
 |:----:|:----:|:----:|:----:|
 |LSTM|1.31851|628|47s|
-|CustomRegressor|0.42683|100|4s|
+|Ridge Regression|0.46074|179|40.5s|
+|Custom Regression|0.42683|100|4s|
 
 ![image](https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/a324435f-c3bc-451c-a3c1-fd3d3ee25588)
 
