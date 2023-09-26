@@ -45,18 +45,24 @@
 ## Model
 
 1. LSTM  
-最初，我們選擇使用LSTM作為預測模型，因為LSTM在處理時間序列數據方面通常都會表現得相當出色。然而，我們後來發現LSTM的output shape只能是1，或者必須與input shape相同才能成功建構模型。這導致無法將其他特徵納入考慮，從而導致預測結果不如預期。因此，我們決定改用Ridge Regression作為新的預測模型。
+最初，我們選擇使用LSTM作為預測模型，因為LSTM在處理時間序列數據方面通常都會表現得相當出色。然而，我們後來發現LSTM的output shape只能是1，或者必須與input shape相同才能成功建構模型。這導致無法將其他特徵納入考慮，使得預測結果不如預期。因此，我們決定改用Ridge Regression作為新的預測模型。
 
 2. Ridge Regression
+在使用此模型時，由於此模型本身不會考慮時間因素，因此將工作日設為一個新的特徵，同時也加入石油價格當作特徵，並從資料中提取出週期性特徵放入模型。順利將RMSLE從1.31851降低為0.46074，且訓練時間也從47秒降為41秒。
 
 3. Custom Regression
+經過數週嘗試各種模型後仍然無法有所改進，於是我們回頭再次觀察數據，發現"學校與辦公用品類"有非常明顯的季節性，所以決定自訂一個模型來處理此現象。將"學校與辦公用品類"使用Random Forest，其他特徵則繼續使用Ridge Regression。此模型使RMSLE從0.46074降低至0.42683，同時也優化程式寫法使訓練時間從41秒降為4秒。
+<p align="center">
+<img src=https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/b5cf1493-a138-455d-a506-f57903231e18 width="300">
+</p>
 
 ## Result
+評價指標為RMSLE。
 
 |Model|Score|Rank|Time|
 |:----:|:----:|:----:|:----:|
 |LSTM|1.31851|628|47s|
-|Ridge Regression|0.46074|179|40.5s|
+|Ridge Regression|0.46074|179|41s|
 |Custom Regression|0.42683|100|4s|
 
 ![image](https://github.com/XieYiZhi78/StoreSales_TimeSeries/assets/107387920/a324435f-c3bc-451c-a3c1-fd3d3ee25588)
